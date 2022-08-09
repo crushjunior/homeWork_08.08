@@ -5,6 +5,10 @@ public class Main {
         task2();
         System.out.println();
         task3();
+        System.out.println();
+        task4();
+        System.out.println();
+        task5();
     }
     // Task 1
     public static void task1() {
@@ -39,6 +43,33 @@ public class Main {
         if (i >= year_200 && i <= year_100) {
             System.out.println(i);
         }
+    }
+    }
+
+    // Task 4
+    public static void task4() {
+    for (int i = 1; i <=30; i++) {
+        System.out.print(i+": ");
+        if (i % 3 == 0 && i % 5 ==0) {
+            System.out.print("ping pong");
+        } else if (i % 3 == 0) {
+            System.out.print("ping");
+        } else if (i % 5 ==0) {
+            System.out.print("pong");
+        }
+        System.out.println();
+    }
+    }
+
+    // task 5
+    public static void task5() {
+    int n0 = 0, n1 = 1, n2;
+        System.out.print(n0 + " " + n1 + " ");
+    for (int i = 1; i < 9; i ++) {
+        n2 = n0 + n1;
+        System.out.print(n2 + " ");
+        n0 = n1;
+        n1 = n2;
     }
     }
 }
